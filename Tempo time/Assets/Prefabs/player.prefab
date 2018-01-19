@@ -215,6 +215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 10
+  jumpForce: 200
+  push: 500
+  hasJumped: 0
 --- !u!114 &114816358726159058
 MonoBehaviour:
   m_ObjectHideFlags: 1
