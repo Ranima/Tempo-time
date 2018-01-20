@@ -42,7 +42,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4041031881141154}
   - component: {fileID: 33377615507576370}
-  - component: {fileID: 136515653283621466}
   - component: {fileID: 23518287440838310}
   m_Layer: 0
   m_Name: Capsule
@@ -216,8 +215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceMultiplier: 10
   jumpForce: 200
-  push: 500
   hasJumped: 0
+  pusher: {fileID: 1864764839124902, guid: a4c8719aafdc46447ae69c7b81da2b19, type: 2}
 --- !u!114 &114816358726159058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,19 +244,6 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1657826267785648}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136515653283621466
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1685443735373710}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

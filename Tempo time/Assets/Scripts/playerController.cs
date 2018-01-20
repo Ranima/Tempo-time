@@ -7,8 +7,11 @@ public class playerController : NetworkBehaviour {
 
     public float forceMultiplier = 5;
     public float jumpForce = 20;
-    public float push = 10;
+    public float attackDuration = 1;
+    private bool canAttack = true;
     public bool hasJumped = false;
+    public GameObject pusher;
+    private float attackTime = 0;
 
 	void Update () {
 		if(!isLocalPlayer)
@@ -31,12 +34,25 @@ public class playerController : NetworkBehaviour {
         }
         //////////////////////////////////////////////////////////////////////
 
-        //////////Pushing******************************************
-        if(Input.GetMouseButtonDown(0))
+        //////////Attacking******************************************
+        if(Input.GetMouseButtonDown(0) && canAttack)
         {
-            GetComponent<Rigidbody>().AddExplosionForce(push, transform.position + GetComponent<Rigidbody>().velocity.normalized, 1);
+            Instantiate(pusher, transform.position + (transform.forward * 1.1f), transform.rotation, transform);
+            canAttack = false;
         }
         //////////////////////////////////////////////////////////////////////
+
+        //////////AttackTimer**********************************************
+        if(canAttack == false)
+        {
+            attackTime += Time.deltaTime;
+            if(attackTime >= attackDuration)
+            {
+                canAttack = true;
+                attackTime = 0;
+            }
+        }
+        //////////////////////////////////////////////////////////////////
 	}
 
     void OnCollisionEnter()
