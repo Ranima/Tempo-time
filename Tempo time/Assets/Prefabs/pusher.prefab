@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 33947213881392196}
   - component: {fileID: 65922307947727454}
   - component: {fileID: 23867660026789694}
-  - component: {fileID: 114647808310146548}
   - component: {fileID: 114047423741320792}
   - component: {fileID: 54172217983059442}
+  - component: {fileID: 114194116806534836}
   m_Layer: 0
   m_Name: pusher
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1864764839124902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -106,7 +106,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1864764839124902}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -143,7 +143,7 @@ MonoBehaviour:
     i15: 25
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114647808310146548
+--- !u!114 &114194116806534836
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -154,5 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba4d3286f8e752458291d3b68a0af3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  push: 500
   existingTime: 1

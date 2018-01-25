@@ -5,7 +5,6 @@ using UnityEngine.Networking;
 
 public class pusher : NetworkBehaviour {
 
-    public float push = 10;
     public float existingTime = 1;
     private float currentTime = 0;
 
@@ -17,10 +16,5 @@ public class pusher : NetworkBehaviour {
             currentTime = 0;
             Destroy(gameObject);
         }
-    }
-
-	void OnTriggerEnter(Collider col)
-    {
-        col.GetComponent<Rigidbody>().AddForce(GetComponent<Rigidbody>().velocity * push);
     }
 }

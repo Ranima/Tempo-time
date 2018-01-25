@@ -6,8 +6,10 @@ using UnityEngine.Networking;
 public class playerController : NetworkBehaviour {
 
     public float forceMultiplier = 5;
+    public Vector3 velocity = Vector3.zero;
     public float jumpForce = 20;
     public float attackDuration = 1;
+    public float maxVelocity = 1;
     private bool canAttack = true;
     public bool hasJumped = false;
     public GameObject pusher;
@@ -15,19 +17,20 @@ public class playerController : NetworkBehaviour {
 
 	void Update () {
 		if(!isLocalPlayer)
-        {
-            return;
-        }
+        { return; }
 
         //////////Movement**************************************
         float x = Input.GetAxis("Horizontal") * forceMultiplier;
         float y = Input.GetAxis("Vertical") * forceMultiplier;
 
-        if(GetComponent<Rigidbody>().velocity.magnitude > 0.5f)
-        transform.LookAt(GetComponent<Rigidbody>().velocity + transform.position - new Vector3(0, GetComponent<Rigidbody>().velocity.y, 0));
+        GetComponent<Rigidbody>().maxAngularVelocity = maxVelocity;
+        if (GetComponent<Rigidbody>().velocity.magnitude > 0.5f)
+        { transform.LookAt(GetComponent<Rigidbody>().velocity + transform.position - new Vector3(0, GetComponent<Rigidbody>().velocity.y, 0)); }
         GetComponent<Rigidbody>().AddForce(x,0,y);
 
-        if(Input.GetKeyDown(KeyCode.Space) && hasJumped == false)
+        velocity = GetComponent<Rigidbody>().velocity;
+
+        if (Input.GetKeyDown(KeyCode.Space) && hasJumped == false)
         {
             GetComponent<Rigidbody>().AddForce(0,jumpForce,0);
             hasJumped = true;
