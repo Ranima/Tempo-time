@@ -40,7 +40,7 @@ public class playerController : NetworkBehaviour {
         //////////Attacking******************************************
         if(Input.GetMouseButtonDown(0) && canAttack)
         {
-            Instantiate(pusher, transform.position + (transform.forward * 1.1f), transform.rotation, transform);
+            Instantiate(pusher, transform.position + (transform.forward * 0.8f), transform.rotation, transform);
             canAttack = false;
         }
         //////////////////////////////////////////////////////////////////////

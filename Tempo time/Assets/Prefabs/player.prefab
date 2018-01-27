@@ -214,7 +214,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMultiplier: 10
+  velocity: {x: 0, y: 0, z: 0}
   jumpForce: 200
+  attackDuration: 1
+  maxVelocity: 0.5
   hasJumped: 0
   pusher: {fileID: 1864764839124902, guid: a4c8719aafdc46447ae69c7b81da2b19, type: 2}
 --- !u!114 &114816358726159058
