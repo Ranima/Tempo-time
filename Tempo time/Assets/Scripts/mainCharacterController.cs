@@ -1,19 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class mainCharacterController : MonoBehaviour {
 
+    public int playerId = 0;
+
     public float forceMultiplier = 10;
     public float rotSpeed = 10;
-    Quaternion oldvar;
+    public Rewired.Player player;
+    private float x = 0;
+    private float y = 0;
+    private Quaternion oldvar;
     Quaternion newvar;
-
+    
+    void Awake()
+    {
+        player = ReInput.players.GetPlayer(playerId);
+    }
 
     void Update ()
     {
-        float x = Input.GetAxis("Horizontal") * forceMultiplier;
-        float y = Input.GetAxis("Vertical") * forceMultiplier;
+
+        x = player.GetAxis("Move Horizontal") * forceMultiplier;
+        y = player.GetAxis("Move Vertical") * forceMultiplier;
 
         if (GetComponent<Rigidbody>().velocity.magnitude > 0.5f)
         {
