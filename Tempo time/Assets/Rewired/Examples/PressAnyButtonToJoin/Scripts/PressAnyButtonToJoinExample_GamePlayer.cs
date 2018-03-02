@@ -12,48 +12,42 @@ namespace Rewired.Demos {
         public int playerId = 0;
 
         public float moveSpeed = 3.0f;
-        public float bulletSpeed = 15.0f;
-        public GameObject bulletPrefab;
+        public float gravity = 5.0f;
 
         private CharacterController cc;
         private Vector3 moveVector;
-        private bool fire;
 
         private Rewired.Player player { get { return ReInput.isReady ? ReInput.players.GetPlayer(playerId) : null; } }
 
         void OnEnable() {
-            // Get the character controller
             cc = GetComponent<CharacterController>();
         }
 
         void Update() {
-            if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+            if(!ReInput.isReady) return;
             if(player == null) return;
 
             GetInput();
             ProcessInput();
+            Gravity();
         }
 
         private void GetInput() {
-            // Get the input from the Rewired Player. All controllers that the Player owns will contribute, so it doesn't matter
-            // whether the input is coming from a joystick, the keyboard, mouse, or a custom controller.
 
-            moveVector.x = player.GetAxis("Move Horizontal"); // get input by name or action id
-            moveVector.y = player.GetAxis("Move Vertical");
-            fire = player.GetButtonDown("Fire");
+            moveVector.x = player.GetAxis("MoveHorizontal");
+            moveVector.z = player.GetAxis("MoveVertical");
         }
 
         private void ProcessInput() {
-            // Process movement
-            if(moveVector.x != 0.0f || moveVector.y != 0.0f) {
+            if(moveVector.x != 0.0f || moveVector.z != 0.0f) {
                 cc.Move(moveVector * moveSpeed * Time.deltaTime);
             }
+        }
 
-            // Process fire
-            if(fire) {
-                GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position + transform.right, transform.rotation);
-                bullet.GetComponent<Rigidbody>().AddForce(transform.right * bulletSpeed, ForceMode.VelocityChange);
-            }
+        private void Gravity()  {
+            if(!cc.isGrounded)
+            moveVector.y = -gravity;
+            cc.Move(moveVector * moveSpeed * Time.deltaTime);
         }
     }
 }
