@@ -57,5 +57,8 @@ public class PlayerCon : MonoBehaviour {
         if (player.GetButtonDown("Jump") && cc.isGrounded)
         { moveVector.y = jump; jumpTimer = 0; }
         cc.Move(moveVector * Time.deltaTime);
+        Vector3 velo = cc.velocity;
+        velo.y -= velo.y;
+        cc.transform.LookAt(cc.transform.position + velo);
     }
 }
