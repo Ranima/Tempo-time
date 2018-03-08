@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class animController : StateMachineBehaviour {
 
+    public GameObject player;
+
     // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
 	//override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 	//
 	//}
 
 	// OnStateUpdate is called before OnStateUpdate is called on any state inside this state machine
-	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-	//
-	//}
+	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+        if (player.GetComponent<CharacterController>().velocity != Vector3.zero)
+        {
+            animator.Play("Walking");
+        }
+        else
+            animator.Play("Idle");
+	}
 
 	// OnStateExit is called before OnStateExit is called on any state inside this state machine
 	//override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

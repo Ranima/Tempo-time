@@ -10,17 +10,19 @@ public class PlayerCon : MonoBehaviour {
     public float moveSpeed = 3.0f;
     public float gravity = 5.0f;
     public float jump = 3.0f;
-    public float JTI = 1;
+    public float fallAcceleration = 1;
+    public Animator anim;
 
     private CharacterController cc;
     private Vector3 moveVector;
-    private float jumpTimer = 11;
+    private float maxFallSpeed;
 
     private Rewired.Player player { get { return ReInput.isReady ? ReInput.players.GetPlayer(playerId) : null; } }
 
     void OnEnable()
     {
         cc = GetComponent<CharacterController>();
+        maxFallSpeed = gravity;
     }
 
     void Update()
@@ -45,18 +47,37 @@ public class PlayerCon : MonoBehaviour {
         if (moveVector.x != 0.0f || moveVector.z != 0.0f)
         {
             cc.Move(moveVector * moveSpeed * Time.deltaTime);
+            anim.SetFloat("speed", moveVector.magnitude);
         }
+        else
+            anim.SetFloat("speed", 0);
     }
 
     private void Gravity()
     {
-        if (jumpTimer <= 10)
-            jumpTimer += JTI;
-        if (!cc.isGrounded && jumpTimer > 10)
-            moveVector.y = -gravity;
+        //if (jumpTimer <= 10)
+        //    jumpTimer += JTI;
+        //if (!cc.isGrounded && jumpTimer > 10)
+        //    moveVector.y = -gravity;
+        //if (player.GetButtonDown("Jump") && cc.isGrounded)
+        //{ moveVector.y = jump; jumpTimer = 0; }
+
+        if (!cc.isGrounded)
+        {
+            gravity += fallAcceleration * Time.deltaTime;
+            if (gravity > maxFallSpeed)
+                gravity = maxFallSpeed;
+        }
+        else
+        {
+            gravity = 1;
+        }
         if (player.GetButtonDown("Jump") && cc.isGrounded)
-        { moveVector.y = jump; jumpTimer = 0; }
+            gravity = -jump;
+        moveVector.y = -gravity;
+
         cc.Move(moveVector * Time.deltaTime);
+
         Vector3 velo = cc.velocity;
         velo.y -= velo.y;
         cc.transform.LookAt(cc.transform.position + velo);
