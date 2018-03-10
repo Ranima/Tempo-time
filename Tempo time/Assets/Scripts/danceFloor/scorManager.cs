@@ -5,18 +5,24 @@ using UnityEngine.UI;
 
 public class scorManager : MonoBehaviour {
     public static int score;
-    Text text;
+    public Text text;
     // Use this for initialization
     void Start () {
 		
 	}
     void Awake()
     {
-        text = GetComponent<Text>();
+        //text = GetComponent<Text>();
         score = 0;
     }
     // Update is called once per frame
     void Update () {
         text.text = "Score: " + score;
+    }
+
+    public void addScore()
+    {
+        score++;
+        Debug.Log("did a score");
     }
 }
