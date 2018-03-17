@@ -6,20 +6,21 @@ public class colorswich : MonoBehaviour
 {
     public Material[] mat;
     int index;
-
-    bool matiral = false;
-    public int scoreValue;
+     
+    //bool matiral = false;
+    //public int scoreValue;
     Renderer ren;
 
     public float timer;
     public float time;
+
+    public float Scoretimer;
+    public float ScoreSetTime;
     // Use this for initialization
     void Start()
     {
         ren = GetComponent<Renderer>();
         ren.enabled = true;
-
-
 
     }
 
@@ -32,26 +33,28 @@ public class colorswich : MonoBehaviour
         if (timer >= time)
         {
             timer = 0;
-            index = Random.Range(0, mat.Length);
+            index = Random.Range(0, mat.Length+1);
             ren.sharedMaterial = mat[index];
-
-
         }
-
+       
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if (ren.sharedMaterial == mat[0])
+        if (col.gameObject.tag == "scoreBAll")
         {
-            Debug.Log(col.name + "you in");
-            score();
+            GetComponent<Renderer>().material.color = Color.black;
+            Debug.Log("DEAD");   
         }
     }
 
-    public void score()
+    void OnTriggerExit(Collider col)
     {
-        scorManager.score += scoreValue;
+
+    
+
     }
 
+   
+        
 }

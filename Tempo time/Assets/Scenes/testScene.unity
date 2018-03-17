@@ -148,11 +148,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 15995871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &15995874
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -204,6 +217,160 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15995871}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &21562993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 21562997}
+  - component: {fileID: 21562996}
+  - component: {fileID: 21562995}
+  - component: {fileID: 21562994}
+  - component: {fileID: 21562998}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &21562994
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21562993}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &21562995
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21562993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &21562996
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21562993}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &21562997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21562993}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.026, y: 0.029, z: -2.1221292}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &21562998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 21562993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2d8f1fa6bc3504b85f4f5d3f450b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 10
+  PathPoints:
+  - {fileID: 320801332}
+  - {fileID: 1608352749}
+  - {fileID: 1789230570}
+  - {fileID: 998158689}
+  - {fileID: 921652265}
+  - {fileID: 1132385920}
+  - {fileID: 1321466152}
+  - {fileID: 304347123}
+  - {fileID: 1171654223}
+  - {fileID: 746862215}
+  - {fileID: 368654498}
+  - {fileID: 842834894}
+  - {fileID: 541666887}
+  - {fileID: 193349713}
+  - {fileID: 907316845}
+  - {fileID: 1455405942}
+  - {fileID: 521060185}
+  - {fileID: 909913319}
+  - {fileID: 359572667}
+  - {fileID: 1119971124}
+  - {fileID: 1755850344}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  reachPoint: 0.35
+  timer: 0
+  setTime: 2
 --- !u!1 &33921884
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,11 +411,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 33921884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &33921887
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -358,11 +538,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 120307422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &120307425
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -454,11 +647,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 125171780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &125171783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -550,11 +756,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 193349712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &193349715
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -646,11 +865,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 204634229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &204634232
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -742,11 +974,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 206463268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &206463271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -838,11 +1083,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 254759360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &254759363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1008,11 +1266,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 304347122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &304347125
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1104,11 +1375,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 320801331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &320801334
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1200,11 +1484,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 350889878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &350889881
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1296,11 +1593,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 359572666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &359572669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1392,11 +1702,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 361423086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &361423089
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1488,11 +1811,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 368654497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &368654500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1602,11 +1938,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 404474594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &404474597
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1718,7 +2067,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512151496
 GameObject:
@@ -1760,11 +2109,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 512151496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &512151499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1856,11 +2218,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 521060184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &521060187
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1952,11 +2327,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 541666886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &541666889
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2048,11 +2436,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 588400646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &588400649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2144,11 +2545,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 657472186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &657472189
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2218,48 +2632,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 7bebe408313e83d418d0f1ac29754801, type: 3}
---- !u!1001 &697663350
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.126
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4638160746942656, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7bc674a831fa9ff4998c231d2f6f42e0, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &708648972 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7bebe408313e83d418d0f1ac29754801, type: 3}
@@ -2318,11 +2690,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 718662747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &718662750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2414,11 +2799,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 746862214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &746862217
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2481,7 +2879,7 @@ GameObject:
   - component: {fileID: 774291568}
   - component: {fileID: 774291567}
   m_Layer: 0
-  m_Name: DanceFloorManagewr
+  m_Name: DanceFloorManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2547,7 +2945,7 @@ Transform:
   - {fileID: 1073953159}
   - {fileID: 1415632803}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &774291567
 MonoBehaviour:
@@ -2560,7 +2958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518baaf073ec5e2439728bc302af2285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 281146647}
 --- !u!114 &774291568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2572,14 +2969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8367451cbffaf45be14c768a75fa87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mat:
-  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
-  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
-  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
-  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
-  setTime: 0.5
-  TimerCountDown: 10
-  CurrentFloor: {fileID: 774291565}
 --- !u!1001 &783765951
 Prefab:
   m_ObjectHideFlags: 0
@@ -2666,11 +3055,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 842834893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &842834896
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2762,11 +3164,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 845807656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &845807659
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2886,11 +3301,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 907316844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &907316847
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2982,11 +3410,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 909913318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &909913321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3078,11 +3519,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 921652264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &921652267
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3202,11 +3656,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 998158688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &998158691
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3298,11 +3765,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045021304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1045021307
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3394,11 +3874,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1073953158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1073953161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3579,11 +4072,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1102933982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1102933985
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3675,11 +4181,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1119971123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1119971126
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3771,11 +4290,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132385919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1132385922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3867,11 +4399,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1171654222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1171654225
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3991,11 +4536,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1248043874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1248043877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4047,6 +4605,101 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248043874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1263172108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1263172112}
+  - component: {fileID: 1263172111}
+  - component: {fileID: 1263172110}
+  - component: {fileID: 1263172109}
+  - component: {fileID: 1263172113}
+  m_Layer: 0
+  m_Name: Hitbox
+  m_TagString: hitBox
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1263172109
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263172108}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1263172110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263172108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1263172111
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263172108}
+  m_Mesh: {fileID: 0}
+--- !u!4 &1263172112
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263172108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263172113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263172108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4d7b859b80c8b4682977bc0ad65686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 1
 --- !u!1 &1286113206
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,7 +4745,7 @@ Transform:
   - {fileID: 939934856}
   - {fileID: 895113124}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308849948
 GameObject:
@@ -4213,11 +4866,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1321466151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1321466154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4337,11 +5003,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1352248316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1352248319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5365,11 +6044,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1415632802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1415632805
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5461,11 +6153,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1428464734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1428464737
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5557,11 +6262,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1455405941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1455405944
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5671,11 +6389,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1608352748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1608352751
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5809,7 +6540,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1631232165
 GameObject:
@@ -5851,11 +6582,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1631232165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1631232168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5947,11 +6691,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1633501466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1633501469
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6043,11 +6800,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1702679490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1702679493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6139,11 +6909,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1755850343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1755850346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6235,11 +7018,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1789230569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1789230572
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6349,11 +7145,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808940169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1808940172
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6445,11 +7254,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893616571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &1893616574
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6588,7 +7410,7 @@ RectTransform:
   m_Children:
   - {fileID: 281146646}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6635,11 +7457,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2140684228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b389c1b62f49f4b43a6246e7391c0b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: c6e7213f663f94d4e98825acd9d18b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  floor: {fileID: 774291568}
+  mat:
+  - {fileID: 2100000, guid: 6a2e2aa5ecf63c84cb0b4d608d29edae, type: 2}
+  - {fileID: 2100000, guid: f82d5ac38827ae2479eb792a630deaa7, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: 92824e30943885f4aba46449d5c951ad, type: 2}
+  - {fileID: 2100000, guid: b875ca4d2eb5ad946b87841dc8983698, type: 2}
+  - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
+  - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
+  - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
+  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
+  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
+  timer: 0
+  time: 2
+  Scoretimer: 0
+  ScoreSetTime: 2
 --- !u!23 &2140684231
 MeshRenderer:
   m_ObjectHideFlags: 0

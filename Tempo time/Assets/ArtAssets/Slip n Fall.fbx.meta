@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 193d80f8976b497459f97fffc6d611aa
+timeCreated: 1521227820
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Collar_Bone
+    100002: Hair_1_Controller
+    100004: Hair_2_Controller
+    100006: Hair_3_Controller
+    100008: Head
+    100010: Head_STOP
+    100012: Left_Ankle
+    100014: Left_Ankle_Controller
+    100016: Left_Collar
+    100018: Left_Ear
+    100020: Left_Ear_Controller
+    100022: Left_Ear_STOP
+    100024: Left_Elbow
+    100026: Left_Elbow_Controller
+    100028: Left_Foot_STOP
+    100030: Left_Hip
+    100032: Left_Hip_Controller
+    100034: Left_Knee
+    100036: Left_Knee_Controller
+    100038: Left_Shoulder
+    100040: Left_Shoulder_Controller
+    100042: Left_STOP
+    100044: Left_Wrist
+    100046: Left_Wrist_Controller
+    100048: Mane_1
+    100050: Mane_2
+    100052: Mane_3
+    100054: Neck_1
+    100056: Neck_1_Controller
+    100058: Neck_2
+    100060: Neck_2_Controller
+    100062: null1
+    100064: Pelvis
+    100066: Pelvis_Controller1
+    100068: Right_Ankle
+    100070: Right_Ankle_Controller
+    100072: Right_Collar
+    100074: Right_Ear
+    100076: Right_Ear_Controller
+    100078: Right_Ear_STOP
+    100080: Right_Elbow
+    100082: Right_Elbow_Controller
+    100084: Right_Foot_STOP
+    100086: Right_Hip1
+    100088: Right_Hip_Controller
+    100090: Right_Knee
+    100092: Right_Knee_Controller
+    100094: Right_Shoulder
+    100096: RIght_Shoulder_Controller
+    100098: Right_STOP
+    100100: Right_Wrist
+    100102: Right_Wrist_Controller
+    100104: Root
+    100106: Root_Controller
+    100108: //RootNode
+    100110: Spine_1
+    100112: Spine_1_Controller
+    100114: Spine_2
+    100116: Spine_2_Controller
+    100118: Spine_3_Controller1
+    100120: Tail_1
+    100122: Tail_2
+    100124: Tail_Base
+    100126: Tail_Base_Controller1
+    100128: Tail_Mid_Controller
+    100130: Tail_STOP
+    100132: Tail_Tip_Controller
+    400000: Collar_Bone
+    400002: Hair_1_Controller
+    400004: Hair_2_Controller
+    400006: Hair_3_Controller
+    400008: Head
+    400010: Head_STOP
+    400012: Left_Ankle
+    400014: Left_Ankle_Controller
+    400016: Left_Collar
+    400018: Left_Ear
+    400020: Left_Ear_Controller
+    400022: Left_Ear_STOP
+    400024: Left_Elbow
+    400026: Left_Elbow_Controller
+    400028: Left_Foot_STOP
+    400030: Left_Hip
+    400032: Left_Hip_Controller
+    400034: Left_Knee
+    400036: Left_Knee_Controller
+    400038: Left_Shoulder
+    400040: Left_Shoulder_Controller
+    400042: Left_STOP
+    400044: Left_Wrist
+    400046: Left_Wrist_Controller
+    400048: Mane_1
+    400050: Mane_2
+    400052: Mane_3
+    400054: Neck_1
+    400056: Neck_1_Controller
+    400058: Neck_2
+    400060: Neck_2_Controller
+    400062: null1
+    400064: Pelvis
+    400066: Pelvis_Controller1
+    400068: Right_Ankle
+    400070: Right_Ankle_Controller
+    400072: Right_Collar
+    400074: Right_Ear
+    400076: Right_Ear_Controller
+    400078: Right_Ear_STOP
+    400080: Right_Elbow
+    400082: Right_Elbow_Controller
+    400084: Right_Foot_STOP
+    400086: Right_Hip1
+    400088: Right_Hip_Controller
+    400090: Right_Knee
+    400092: Right_Knee_Controller
+    400094: Right_Shoulder
+    400096: RIght_Shoulder_Controller
+    400098: Right_STOP
+    400100: Right_Wrist
+    400102: Right_Wrist_Controller
+    400104: Root
+    400106: Root_Controller
+    400108: //RootNode
+    400110: Spine_1
+    400112: Spine_1_Controller
+    400114: Spine_2
+    400116: Spine_2_Controller
+    400118: Spine_3_Controller1
+    400120: Tail_1
+    400122: Tail_2
+    400124: Tail_Base
+    400126: Tail_Base_Controller1
+    400128: Tail_Mid_Controller
+    400130: Tail_STOP
+    400132: Tail_Tip_Controller
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

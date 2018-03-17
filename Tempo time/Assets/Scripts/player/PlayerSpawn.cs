@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class PlayerSpawn : MonoBehaviour {
 
@@ -24,6 +25,8 @@ public class PlayerSpawn : MonoBehaviour {
         for(int i = 0; i < players; i++)
         {
             SpawnPlayer(spawnPoints[i + 1]);
+            player.GetComponent<PlayerCon>().playerId = i;
+            
         }
     }
 
