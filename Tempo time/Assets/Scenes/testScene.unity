@@ -160,8 +160,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -334,40 +332,34 @@ MonoBehaviour:
   - {fileID: 359572667}
   - {fileID: 1119971124}
   - {fileID: 1755850344}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1248043875}
+  - {fileID: 1102933983}
+  - {fileID: 1893616572}
+  - {fileID: 15995872}
+  - {fileID: 1633501467}
+  - {fileID: 588400647}
+  - {fileID: 1045021305}
+  - {fileID: 361423087}
+  - {fileID: 1352248317}
+  - {fileID: 718662748}
+  - {fileID: 33921885}
+  - {fileID: 350889879}
+  - {fileID: 1808940170}
+  - {fileID: 512151497}
+  - {fileID: 206463269}
+  - {fileID: 254759361}
+  - {fileID: 657472187}
+  - {fileID: 1631232166}
+  - {fileID: 1702679491}
+  - {fileID: 125171781}
+  - {fileID: 404474595}
+  - {fileID: 845807657}
+  - {fileID: 204634230}
+  - {fileID: 1428464735}
+  - {fileID: 120307423}
+  - {fileID: 2140684229}
+  - {fileID: 1073953159}
+  - {fileID: 1415632803}
   reachPoint: 0.35
   timer: 0
   setTime: 2
@@ -423,8 +415,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -550,8 +540,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -659,8 +647,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -768,8 +754,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -877,8 +861,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -986,8 +968,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1095,8 +1075,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1278,8 +1256,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1387,8 +1363,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1496,8 +1470,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1605,8 +1577,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1714,8 +1684,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1823,8 +1791,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -1950,8 +1916,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2121,8 +2085,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2230,8 +2192,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2339,8 +2299,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2448,8 +2406,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2557,8 +2513,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2632,6 +2586,48 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: 7bebe408313e83d418d0f1ac29754801, type: 3}
+--- !u!1001 &671038340
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496116683351776, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &708648972 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7bebe408313e83d418d0f1ac29754801, type: 3}
@@ -2702,8 +2698,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2811,8 +2805,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -2876,8 +2868,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 774291566}
-  - component: {fileID: 774291568}
-  - component: {fileID: 774291567}
   m_Layer: 0
   m_Name: DanceFloorManager
   m_TagString: Untagged
@@ -2947,28 +2937,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &774291567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 774291565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518baaf073ec5e2439728bc302af2285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &774291568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 774291565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f8367451cbffaf45be14c768a75fa87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &783765951
 Prefab:
   m_ObjectHideFlags: 0
@@ -3067,8 +3035,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3176,8 +3142,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3313,8 +3277,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3422,8 +3384,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3531,8 +3491,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3668,8 +3626,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3777,8 +3733,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -3886,8 +3840,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -4084,8 +4036,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -4193,8 +4143,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -4302,8 +4250,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -4411,8 +4357,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -4548,8 +4492,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -4605,101 +4547,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248043874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1263172108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1263172112}
-  - component: {fileID: 1263172111}
-  - component: {fileID: 1263172110}
-  - component: {fileID: 1263172109}
-  - component: {fileID: 1263172113}
-  m_Layer: 0
-  m_Name: Hitbox
-  m_TagString: hitBox
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1263172109
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1263172108}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1263172110
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1263172108}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1263172111
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1263172108}
-  m_Mesh: {fileID: 0}
---- !u!4 &1263172112
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1263172108}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1263172113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1263172108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e4d7b859b80c8b4682977bc0ad65686, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 1
 --- !u!1 &1286113206
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,8 +4725,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -5015,8 +4860,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6056,8 +5899,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6165,8 +6006,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6274,8 +6113,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6401,8 +6238,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6594,8 +6429,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6703,8 +6536,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6812,8 +6643,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -6921,8 +6750,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -7030,8 +6857,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -7157,8 +6982,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -7266,8 +7089,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0
@@ -7469,8 +7290,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 677bafdb507d61542b5f90361b4a0df6, type: 2}
   - {fileID: 2100000, guid: c1da3110b90b4bb42846b0c7256648a0, type: 2}
   - {fileID: 2100000, guid: ff97d10e24892b24cb976c613ea59490, type: 2}
-  - {fileID: 2100000, guid: e87031315022b30448041927385d279b, type: 2}
-  - {fileID: 2100000, guid: 971a2578f8aeeb54392638a457e0d434, type: 2}
   timer: 0
   time: 2
   Scoretimer: 0

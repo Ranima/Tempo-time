@@ -33,7 +33,7 @@ public class colorswich : MonoBehaviour
         if (timer >= time)
         {
             timer = 0;
-            index = Random.Range(0, mat.Length+1);
+            index = Random.Range(0, mat.Length);
             ren.sharedMaterial = mat[index];
         }
        

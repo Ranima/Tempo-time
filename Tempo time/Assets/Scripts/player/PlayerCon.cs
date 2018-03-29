@@ -15,13 +15,13 @@ public class PlayerCon : MonoBehaviour {
     public Animator anim;
     public float knockDuration;
     public float punchDuration;
-    //public Vector3 PDM;
 
     private CharacterController cc;
     private Vector3 moveVector;
     private float maxFallSpeed;
     private bool isHit;
-   // private Transform PT;
+
+    private float timer;
 
     private Player player;
 
@@ -29,7 +29,6 @@ public class PlayerCon : MonoBehaviour {
     {
         cc = GetComponent<CharacterController>();
         maxFallSpeed = gravity;
- //       PT.position = PDM;
     }
 
     void Update()
@@ -99,13 +98,14 @@ public class PlayerCon : MonoBehaviour {
 
     private void PunchAndThrow()
     {
-        for (float p = 0; p <= knockDuration; p += Time.deltaTime)
+        timer = 0;
+        while (timer <= punchDuration)
         {
             Instantiate<GameObject>(hitbox, transform);
-            anim.SetBool("hit", true);
-            return;
+            anim.SetBool("punch", true);
+            timer += Time.deltaTime;
         }
-        anim.SetBool("hit", false);
+        anim.SetBool("punch", false);
     }
 
 
@@ -121,11 +121,12 @@ public class PlayerCon : MonoBehaviour {
     {
         if (isHit == true)
         {
+            timer = 0;
             for (float i = 0; i <= knockDuration; i += Time.deltaTime)
             {
                 moveVector = Vector3.zero;
                 anim.SetBool("hit", true);
-                return;
+                timer += Time.deltaTime;
             }
         }
         anim.SetBool("hit", false);
