@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    public string scene;
+
+    void Awake()
+    {
+        PlayGame();
+    }
+
     public void PlayGame()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(scene);
 
     }
 
