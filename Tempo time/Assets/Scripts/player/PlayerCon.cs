@@ -98,13 +98,33 @@ public class PlayerCon : MonoBehaviour {
 
     private void PunchAndThrow()
     {
-        timer = 0;
-        while (timer <= punchDuration)
+        //timer = 0;
+        //while (timer <= punchDuration)
+        //{
+        //    if (anim.GetBool("punch") == false)
+        //    {
+        //        Instantiate<GameObject>(hitbox, transform);
+        //        anim.SetBool("punch", true);
+        //    }
+        //    timer += Time.deltaTime;
+        //}
+        //if (timer >= punchDuration)
+        //{
+        //    anim.SetBool("punch", false);
+        //}
+
+        if (!anim.GetBool("punch"))
         {
-            Instantiate<GameObject>(hitbox, transform);
+            //Instantiate<GameObject>(hitbox, transform);
             anim.SetBool("punch", true);
-            timer += Time.deltaTime;
         }
+
+         Invoke("ResetPunch", punchDuration);
+
+    }
+
+    public void ResetPunch()
+    {
         anim.SetBool("punch", false);
     }
 
@@ -119,16 +139,22 @@ public class PlayerCon : MonoBehaviour {
 
     private void KnockDown()
     {
-        if (isHit == true)
+        if (!anim.GetBool("hit"))
         {
-            timer = 0;
-            for (float i = 0; i <= knockDuration; i += Time.deltaTime)
-            {
-                moveVector = Vector3.zero;
-                anim.SetBool("hit", true);
-                timer += Time.deltaTime;
-            }
+            //timer = 0;
+            //for (float i = 0; i <= knockDuration; i += Time.deltaTime)
+            //{
+            //    moveVector = Vector3.zero;
+            //    anim.SetBool("hit", true);
+            //    timer += Time.deltaTime;
+            //}
+            anim.SetBool("hit", true);
         }
+        Invoke("ResetHit", knockDuration);
+    }
+
+    public void ResetHit()
+    {
         anim.SetBool("hit", false);
     }
 }

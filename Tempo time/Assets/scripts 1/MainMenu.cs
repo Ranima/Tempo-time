@@ -7,11 +7,6 @@ public class MainMenu : MonoBehaviour {
 
     public string scene;
 
-    void Awake()
-    {
-        PlayGame();
-    }
-
     public void PlayGame()
     {
 
@@ -21,7 +16,7 @@ public class MainMenu : MonoBehaviour {
 
     public void Quit()
     {
-        Debug.Log("im reach bitch");
+        Debug.Log("EndScene");
         Application.Quit();
 
     }
