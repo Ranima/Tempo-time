@@ -115,7 +115,7 @@ public class PlayerCon : MonoBehaviour {
 
         if (!anim.GetBool("punch"))
         {
-            //Instantiate<GameObject>(hitbox, transform);
+            Instantiate<GameObject>(hitbox, transform);
             anim.SetBool("punch", true);
         }
 
@@ -156,5 +156,10 @@ public class PlayerCon : MonoBehaviour {
     public void ResetHit()
     {
         anim.SetBool("hit", false);
+    }
+
+    public void StopMovement()
+    {
+        moveVector = Vector3.zero;
     }
 }
