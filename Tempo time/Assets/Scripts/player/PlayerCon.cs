@@ -115,7 +115,9 @@ public class PlayerCon : MonoBehaviour {
 
         if (!anim.GetBool("punch"))
         {
-            Instantiate<GameObject>(hitbox, transform);
+            Transform t = transform;
+            t.position += transform.forward;
+            Instantiate<GameObject>(hitbox, t);
             anim.SetBool("punch", true);
         }
 
