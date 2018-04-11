@@ -2051,7 +2051,7 @@ MonoBehaviour:
   hitbox: {fileID: 1271937077699344, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
   anim: {fileID: 95480818793795164}
   knockDuration: 0
-  punchDuration: 1
+  punchDuration: 0.25
 --- !u!137 &137587541299113948
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

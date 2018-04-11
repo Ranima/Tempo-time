@@ -46,15 +46,5 @@ public class colorswich : MonoBehaviour
             GetComponent<Renderer>().material.color = Color.black;
             Debug.Log("DEAD");   
         }
-    }
-
-    void OnTriggerExit(Collider col)
-    {
-
-    
-
-    }
-
-   
-        
+    }   
 }

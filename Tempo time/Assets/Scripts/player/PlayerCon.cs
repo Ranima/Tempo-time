@@ -115,9 +115,7 @@ public class PlayerCon : MonoBehaviour {
 
         if (!anim.GetBool("punch"))
         {
-            Transform t = transform;
-            t.position += transform.forward;
-            Instantiate<GameObject>(hitbox, t);
+            Instantiate<GameObject>(hitbox, transform);
             anim.SetBool("punch", true);
         }
 
@@ -131,11 +129,11 @@ public class PlayerCon : MonoBehaviour {
     }
 
 
-    void OnTriggerEnter(Collider col)
+    void OnCollisionEnter(Collision col)
     {
-        if(col.tag == "hitBox")
+        if(col.gameObject.tag == "hitBox")
         {
-            isHit = true;
+            anim.SetBool("hit", true);
         }
     }
 
