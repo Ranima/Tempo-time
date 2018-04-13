@@ -2052,6 +2052,11 @@ MonoBehaviour:
   anim: {fileID: 95480818793795164}
   knockDuration: 0
   punchDuration: 0.25
+  score: {fileID: 2100000, guid: 20cb295f5c8ebaa44864d77d96a0e7da, type: 2}
+  DanceFloor: {fileID: 0}
+  raycastfilter:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!137 &137587541299113948
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

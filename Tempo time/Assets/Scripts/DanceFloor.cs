@@ -8,8 +8,9 @@ public class DanceFloor : MonoBehaviour {
     public float ScoreTime = 10;
     public float TransTime = 0.5f;
     public int players = 1;
+    public bool[] Scorecheck;
 
-    private bool DanceOver = false;
+    //private bool DanceOver = false;
     private GameObject[] tiles;
     public Object[] mats;
     public Object off;
@@ -21,6 +22,7 @@ public class DanceFloor : MonoBehaviour {
     void Awake () {
         GetTiles();
         LoadMaterials();
+        Scorecheck = new bool[players];
     }
 	
 	// Update is called once per frame
@@ -50,6 +52,11 @@ public class DanceFloor : MonoBehaviour {
             {
                 danceTimeOver = 0;
                 scorePhaseUninit = true;
+                Debug.Log("scorecheck enabled");
+                for (int i = 0; i <= players; i++)
+                {
+                    Scorecheck[i] = true;
+                }
             }
             danceTimeOver += Time.deltaTime;
         }
@@ -65,13 +72,13 @@ public class DanceFloor : MonoBehaviour {
     //Gets all tiles on the dance floor.
     void GetTiles() {
         tiles = new GameObject[transform.childCount];
-        Debug.Log(GetComponentsInChildren<Transform>().Length);
-        for (int i = 0; i < GetComponentsInChildren<Transform>().Length-1 ; i++)
+        Debug.Log(GetComponentsInChildren<colorswich>().Length);
+        for (int i = 0; i < GetComponentsInChildren<colorswich>().Length ; i++)
         {
             //tiles[i] = transform.GetChild(i).gameObject;
 
             
-            tiles[i] = GetComponentsInChildren<Transform>()[i].gameObject;
+            tiles[i] = GetComponentsInChildren<colorswich>()[i].gameObject;
         }
     }
 
@@ -95,7 +102,7 @@ public class DanceFloor : MonoBehaviour {
     //Changes Materials on all the tiles
     void ChangeAllTiles(GameObject[] T)
     {
-        for (int i = 1; i < T.Length; i++)
+        for (int i = 0; i < T.Length; i++)
         {
             ChangeTile(T[i], GetMaterial());
         }
@@ -104,7 +111,7 @@ public class DanceFloor : MonoBehaviour {
     //Turns the whole dance floor black
     void DanceFloorOff(GameObject[] T)
     {
-        for(int i = 1; i < T.Length; i++)
+        for(int i = 0; i < T.Length; i++)
         {
             ChangeTile(T[i], (Material)off);
         }
@@ -143,8 +150,8 @@ public class DanceFloor : MonoBehaviour {
         {
             //ChangeAllTiles(tiles);
             i += Time.deltaTime;
-            if (i >= DanceTime)
-                DanceOver = true;
+            //if (i >= DanceTime)
+                //DanceOver = true;
         }
     }
 
@@ -159,8 +166,8 @@ public class DanceFloor : MonoBehaviour {
                 DanceFloorScore(tiles);
             }
             i += Time.deltaTime;
-            if (i >= ScoreTime)
-                DanceOver = false;
+            //if (i >= ScoreTime)
+                //DanceOver = false;
         }
     }
 }

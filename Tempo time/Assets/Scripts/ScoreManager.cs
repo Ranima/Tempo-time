@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour {
     public Text player2;
     public Text player3;
     public Text player4;
+    public GameObject DanceFloor;
 
     private int[] playerScore;
 
@@ -16,23 +17,23 @@ public class ScoreManager : MonoBehaviour {
         playerScore = new int[gameObject.GetComponent<PlayerSpawn>().players];
     }
 
-    void IncrementScore(int player){
+    public void IncrementScore(int player){
         playerScore[player] += 1;
         if (player == 0)
         {
-            player1.text = ""+playerScore[player];
+            player1.text = "" + playerScore[player];
         }
         if (player == 1)
         {
-            player1.text = "" + playerScore[player];
+            player2.text = "" + playerScore[player];
         }
         if (player == 2)
         {
-            player1.text = "" + playerScore[player];
+            player3.text = "" + playerScore[player];
         }
         if (player == 3)
         {
-            player1.text = "" + playerScore[player];
+            player4.text = "" + playerScore[player];
         }
     }
 }

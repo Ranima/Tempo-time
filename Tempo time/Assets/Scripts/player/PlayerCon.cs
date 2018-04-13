@@ -15,13 +15,16 @@ public class PlayerCon : MonoBehaviour {
     public Animator anim;
     public float knockDuration;
     public float punchDuration;
+    public Material score;
+    public GameObject DanceFloor;
+    public LayerMask raycastfilter;
 
     private CharacterController cc;
     private Vector3 moveVector;
     private float maxFallSpeed;
-    private bool isHit;
+    //private bool isHit;
 
-    private float timer;
+    //private float timer;
 
     private Player player;
 
@@ -29,6 +32,7 @@ public class PlayerCon : MonoBehaviour {
     {
         cc = GetComponent<CharacterController>();
         maxFallSpeed = gravity;
+        DanceFloor = GetComponentInParent<ScoreManager>().DanceFloor;
     }
 
     void Update()
@@ -42,6 +46,11 @@ public class PlayerCon : MonoBehaviour {
         ProcessInput();
         KnockDown();
         Gravity();
+    }
+
+    void LateUpdate()
+    {
+        Score();
     }
 
     private void GetInput()
@@ -161,5 +170,28 @@ public class PlayerCon : MonoBehaviour {
     public void StopMovement()
     {
         moveVector = Vector3.zero;
+    }
+
+    public void Score()
+    {
+        if (DanceFloor.GetComponent<DanceFloor>().Scorecheck[playerId])
+        {
+            ScoreManager pointref = GetComponentInParent<ScoreManager>(); ;
+            RaycastHit hit;
+            Ray ray = new Ray(transform.position, Vector3.down);
+            if (Physics.Raycast(ray, out hit, 2, raycastfilter))
+            {
+                //Debug.Log(hit.collider.name);
+                MeshRenderer thingy = hit.collider.GetComponent<MeshRenderer>();
+                if (thingy.sharedMaterial == score)
+                {
+                    pointref.IncrementScore(playerId);
+                }
+                Debug.Log(thingy.sharedMaterial.name);
+            }
+
+            Debug.Log("scorecheck disabled");
+            DanceFloor.GetComponent<DanceFloor>().Scorecheck[playerId] = false;
+        }
     }
 }
