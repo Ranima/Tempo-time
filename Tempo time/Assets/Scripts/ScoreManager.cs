@@ -9,9 +9,10 @@ public class ScoreManager : MonoBehaviour {
     public Text player2;
     public Text player3;
     public Text player4;
+    public int ScoreToWin = 10;
     public GameObject DanceFloor;
 
-    private int[] playerScore;
+    public int[] playerScore;
 
     void Awake(){
         playerScore = new int[gameObject.GetComponent<PlayerSpawn>().players];
@@ -35,5 +36,53 @@ public class ScoreManager : MonoBehaviour {
         {
             player4.text = "" + playerScore[player];
         }
+        ScoreCheck();
+    }
+
+    void ScoreCheck(){
+        //JON:Made the loop not go upto i<= but < as =4 results in exceeded bounds
+        for (int i = 0; i < DanceFloor.GetComponent<DanceFloor>().players; i++)
+        {
+            bool check = true;
+
+            if (playerScore[i] >= ScoreToWin)
+            {
+                if (check)
+                {
+                    if (ArrayAgainstPartOfSelf(playerScore, i))
+                    {
+                        TieState();
+                        break;
+                    }
+                    check = false;
+                }
+                WinState(i);
+                break;
+            }
+        }
+
+    }
+
+    void WinState(int i)
+    {
+        Debug.Log("Player " + (i + 1) + " WINS!");
+    }
+
+    void TieState()
+    {
+        Debug.Log("UNFRIGINBELIEVABLE");
+    }
+
+    bool ArrayAgainstPartOfSelf(int[] array, int check)
+    {
+        bool skip = false;
+        for (int i = 0; i <= array.Length; i++)
+        {
+            if (i == check)
+                skip = true;
+            if (!skip && array[check] <= array[i])
+                return true;
+        }
+        return false;
     }
 }

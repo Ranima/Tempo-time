@@ -17,25 +17,27 @@ public class DanceFloor : MonoBehaviour {
     public Object score;
     public float danceTimeOver = 0;
     private bool scorePhaseUninit = true;
-    private float MyFuckingFloat = 0;
+    private bool[] hasScored;
+    private float MyFloat = 0;
 
     void Awake () {
         GetTiles();
         LoadMaterials();
         Scorecheck = new bool[players];
+        hasScored = new bool[players];
     }
 	
 	// Update is called once per frame
 	void Update () {
         if (danceTimeOver < DanceTime)
         {
-            if (MyFuckingFloat > TransTime)
+            if (MyFloat > TransTime)
             {
                 //Probably do nothing while the players dance around
                 ChangeAllTiles(tiles);
-                MyFuckingFloat = 0;
+                MyFloat = 0;
             }
-            MyFuckingFloat += Time.deltaTime;
+            MyFloat += Time.deltaTime;
             danceTimeOver += Time.deltaTime;
         }
         else
@@ -46,16 +48,27 @@ public class DanceFloor : MonoBehaviour {
                 DanceFloorOff(tiles);
                 DanceFloorScore(tiles);
                 scorePhaseUninit = false;
+
+                //JON:Made the loop not go upto i<= but < as =4 results in exceeded bounds
+                for (int i = 0; i < hasScored.Length; i++)
+                {
+                    hasScored[i] = false;
+                }
             }
 
             if (danceTimeOver > DanceTime + ScoreTime)
             {
                 danceTimeOver = 0;
+               
                 scorePhaseUninit = true;
-                Debug.Log("scorecheck enabled");
-                for (int i = 0; i <= players; i++)
+                //Debug.Log("scorecheck enabled");
+                //JON:Made the loop not go upto i<= but < as =4 results in exceeded bounds
+
+                for (int i = 0; i < players; i++)
                 {
-                    Scorecheck[i] = true;
+                    if(!hasScored[i])
+                        Scorecheck[i] = true;
+                    hasScored[i] = true;
                 }
             }
             danceTimeOver += Time.deltaTime;
@@ -72,7 +85,7 @@ public class DanceFloor : MonoBehaviour {
     //Gets all tiles on the dance floor.
     void GetTiles() {
         tiles = new GameObject[transform.childCount];
-        Debug.Log(GetComponentsInChildren<colorswich>().Length);
+        //Debug.Log(GetComponentsInChildren<colorswich>().Length);
         for (int i = 0; i < GetComponentsInChildren<colorswich>().Length ; i++)
         {
             //tiles[i] = transform.GetChild(i).gameObject;
@@ -138,7 +151,7 @@ public class DanceFloor : MonoBehaviour {
         //which we can now use to identify 1,2,3 or 4 gameobjects in the children array
         for (int i = 0; i < players-1; i++)
         {
-            Debug.Log(T[selectedIndexes[i]].name);
+            //Debug.Log(T[selectedIndexes[i]].name);
             ChangeTile(T[selectedIndexes[i]], (Material)score);
         }
     }

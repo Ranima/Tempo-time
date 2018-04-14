@@ -969,7 +969,9 @@ MonoBehaviour:
   player2: {fileID: 1593190912}
   player3: {fileID: 1112400845}
   player4: {fileID: 1460457266}
+  ScoreToWin: 100
   DanceFloor: {fileID: 774291565}
+  playerScore: 
 --- !u!1 &1308849948
 GameObject:
   m_ObjectHideFlags: 0

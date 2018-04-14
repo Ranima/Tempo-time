@@ -50,6 +50,7 @@ public class PlayerCon : MonoBehaviour {
 
     void LateUpdate()
     {
+        
         Score();
     }
 
@@ -187,10 +188,10 @@ public class PlayerCon : MonoBehaviour {
                 {
                     pointref.IncrementScore(playerId);
                 }
-                Debug.Log(thingy.sharedMaterial.name);
+                //Debug.Log(thingy.sharedMaterial.name);
             }
 
-            Debug.Log("scorecheck disabled");
+            //Debug.Log("scorecheck disabled");
             DanceFloor.GetComponent<DanceFloor>().Scorecheck[playerId] = false;
         }
     }
