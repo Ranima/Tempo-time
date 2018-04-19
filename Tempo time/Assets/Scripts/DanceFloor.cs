@@ -25,6 +25,7 @@ public class DanceFloor : MonoBehaviour {
         LoadMaterials();
         Scorecheck = new bool[players];
         hasScored = new bool[players];
+        ChangeAllTiles(tiles);
     }
 	
 	// Update is called once per frame

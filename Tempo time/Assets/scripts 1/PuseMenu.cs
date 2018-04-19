@@ -6,18 +6,19 @@ using UnityEngine.UI;
 
 public class PuseMenu : MonoBehaviour {
 
-    public static bool GamePused = false;
-
-    public GameObject puseMenuUI;
+    public static bool GamePaused = false;
+    public ScoreManager manager;
+    public Scene scene;
+    public GameObject pauseMenuUI;
 
     // Update is called once per frame
     void Update ()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || pauseMenuUI.activeInHierarchy)
         {
 
-            if (GamePused)
+            if (GamePaused && Input.GetKeyDown(KeyCode.Escape) && !manager.hasWon)
             {
                 Resume();
             }
@@ -27,46 +28,40 @@ public class PuseMenu : MonoBehaviour {
             }
 
         }
-        	
+        Debug.Log(Time.timeScale);	
 	}
    public void Resume()
     {
 
-        puseMenuUI.SetActive(false);
+        pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        GamePused = false;
+        GamePaused = false;
 
     }
 
    public void Pause()
     {
-
-        puseMenuUI.SetActive(true);
+        pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GamePused = true;
-
+        GamePaused = true;
     }
 
     public void loadMenu()
     {
-
-        SceneManager.LoadScene("mainMenu");
-
+        SceneManager.LoadScene(scene.name);
+        Resume();
     }
 
     public void Restart()
     {
-
-        SceneManager.LoadScene("dancs");
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Resume();
     }
 
     public void Quit()
     {
-
-        Debug.Log("im reach bitch");
+        Debug.Log("goodbye");
         Application.Quit();
-
     }
 
 

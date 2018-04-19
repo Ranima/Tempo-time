@@ -9,10 +9,12 @@ public class ScoreManager : MonoBehaviour {
     public Text player2;
     public Text player3;
     public Text player4;
+    public GameObject winObject;
     public int ScoreToWin = 10;
     public GameObject DanceFloor;
 
     public int[] playerScore;
+    public bool hasWon = false;
 
     void Awake(){
         playerScore = new int[gameObject.GetComponent<PlayerSpawn>().players];
@@ -65,23 +67,30 @@ public class ScoreManager : MonoBehaviour {
 
     void WinState(int i)
     {
+        winObject.SetActive(true);
+        winObject.GetComponentInChildren<Text>().text = ("Player " + (i + 1) + " WINS!");
+        hasWon = true;
         Debug.Log("Player " + (i + 1) + " WINS!");
     }
 
     void TieState()
     {
-        Debug.Log("UNFRIGINBELIEVABLE");
+        winObject.SetActive(true);
+        winObject.GetComponentInChildren<Text>().text = ("TIE!");
+        hasWon = true;
+        Debug.Log("TIE! UNFRIGINBELIEVABLE");
     }
 
     bool ArrayAgainstPartOfSelf(int[] array, int check)
     {
         bool skip = false;
-        for (int i = 0; i <= array.Length; i++)
+        for (int i = 0; i < array.Length; i++)
         {
             if (i == check)
                 skip = true;
             if (!skip && array[check] <= array[i])
                 return true;
+            skip = false;
         }
         return false;
     }
