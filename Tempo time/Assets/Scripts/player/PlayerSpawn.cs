@@ -8,6 +8,7 @@ public class PlayerSpawn : MonoBehaviour {
     public int players;
     public GameObject player;
     public Transform[] spawnPoints;
+    public Material defMat;
 
 	void Awake()
     {
@@ -24,9 +25,13 @@ public class PlayerSpawn : MonoBehaviour {
     {
         for(int i = 0; i < players; i++)
         {
-            SpawnPlayer(spawnPoints[i + 1]);
-            player.GetComponent<PlayerCon>().playerId = i;
-            
+            GameObject TempPlayer = Instantiate(player, spawnPoints[i + 1].position, spawnPoints[i + 1].rotation, transform);
+            TempPlayer.GetComponent<PlayerCon>().playerId = i;
+          
+            if (staticPlayerInfo.playerMaterials[i] != null)
+            { TempPlayer.GetComponent<RendererHolder>().actualRender.material = staticPlayerInfo.playerMaterials[i]; }
+            else
+                TempPlayer.GetComponent<RendererHolder>().actualRender.material = defMat;
         }
     }
 

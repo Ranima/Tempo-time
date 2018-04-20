@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 95480818793795164}
   - component: {fileID: 143861043792705944}
   - component: {fileID: 114163170535287968}
+  - component: {fileID: 114346541049623020}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -2057,6 +2058,19 @@ MonoBehaviour:
   raycastfilter:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &114346541049623020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1245743346629754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aff137067f11f944b3ad1d7c9a1a0dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualObject: {fileID: 1789301269941478}
+  actualRender: {fileID: 137587541299113948}
 --- !u!137 &137587541299113948
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

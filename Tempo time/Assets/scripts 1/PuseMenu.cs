@@ -8,7 +8,7 @@ public class PuseMenu : MonoBehaviour {
 
     public static bool GamePaused = false;
     public ScoreManager manager;
-    public Scene scene;
+    public string scene;
     public GameObject pauseMenuUI;
 
     // Update is called once per frame
@@ -48,7 +48,7 @@ public class PuseMenu : MonoBehaviour {
 
     public void loadMenu()
     {
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(scene);
         Resume();
     }
 
