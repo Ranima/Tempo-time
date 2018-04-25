@@ -31,6 +31,7 @@ public class Charterselect : MonoBehaviour {
         }
 
         player.GetComponent<Renderer>().material = (Material)Charterlist[index];
+        selectButtton();
     }
 
     public void rightArrow()
@@ -43,6 +44,7 @@ public class Charterselect : MonoBehaviour {
         }
 
         player.GetComponent<Renderer>().material = (Material)Charterlist[index];
+        selectButtton();
     }
 
     public void selectButtton()
