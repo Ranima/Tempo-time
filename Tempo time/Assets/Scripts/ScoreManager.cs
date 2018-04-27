@@ -5,10 +5,16 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
 
-    public Text player1;
-    public Text player2;
-    public Text player3;
-    public Text player4;
+
+
+    public Text player1T;
+    public Slider player1S;
+    public Text player2T;
+    public Slider player2S;
+    public Text player3T;
+    public Slider player3S;
+    public Text player4T;
+    public Slider player4S;
     public GameObject winObject;
     public int ScoreToWin = 10;
     public GameObject DanceFloor;
@@ -24,19 +30,23 @@ public class ScoreManager : MonoBehaviour {
         playerScore[player] += 1;
         if (player == 0)
         {
-            player1.text = "" + playerScore[player];
+            player1T.text = "" + playerScore[player];
+            player1S.value = playerScore[player];
         }
         if (player == 1)
         {
-            player2.text = "" + playerScore[player];
+            player2T.text = "" + playerScore[player];
+            player2S.value = playerScore[player];
         }
         if (player == 2)
         {
-            player3.text = "" + playerScore[player];
+            player3T.text = "" + playerScore[player];
+            player3S.value = playerScore[player];
         }
         if (player == 3)
         {
-            player4.text = "" + playerScore[player];
+            player4T.text = "" + playerScore[player];
+            player4S.value = playerScore[player];
         }
         ScoreCheck();
     }

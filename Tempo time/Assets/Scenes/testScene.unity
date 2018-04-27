@@ -492,7 +492,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 155ff557f4cebcf489c20e8800e53e4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 688676fe72239c245a6ea97ffc511215, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -692,7 +692,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a47e1084c12fb874cae64f4dcbafcecb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ceb0c31992126a64cb0c404677a15051, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -926,14 +926,14 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 426551175}
   m_FillRect: {fileID: 404806059}
   m_HandleRect: {fileID: 426551174}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 10
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1079,14 +1079,14 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 980930614}
   m_FillRect: {fileID: 313658675}
   m_HandleRect: {fileID: 980930613}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 10
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1165,7 +1165,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cffc5a656b3174145941b2669822db17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79d1b1ca5ff11e7469f9708bfd9bed11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1566,14 +1566,14 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 502296965}
   m_FillRect: {fileID: 986148281}
   m_HandleRect: {fileID: 502296964}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 10
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2015,14 +2015,14 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 176336717}
   m_FillRect: {fileID: 274157244}
   m_HandleRect: {fileID: 176336716}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 10
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2179,7 +2179,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c5d2db4791a4f344793d409bcaaa1b2a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2542ad498288ab641b4399c2bf3e5875, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2627,10 +2627,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf93c284d3b34bf419cd31e358467a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 1589183816}
-  player2: {fileID: 1593190912}
-  player3: {fileID: 1112400845}
-  player4: {fileID: 1460457266}
+  player1T: {fileID: 1589183816}
+  player1S: {fileID: 382079329}
+  player2T: {fileID: 1593190912}
+  player2S: {fileID: 521093461}
+  player3T: {fileID: 1112400845}
+  player3S: {fileID: 930661187}
+  player4T: {fileID: 1460457266}
+  player4S: {fileID: 343001576}
   winObject: {fileID: 1565872464}
   ScoreToWin: 10
   DanceFloor: {fileID: 774291565}
