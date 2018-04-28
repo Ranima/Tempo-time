@@ -149,18 +149,11 @@ public class PlayerCon : MonoBehaviour {
 
     private void KnockDown()
     {
-        if (!anim.GetBool("hit"))
+        if (anim.GetBool("hit"))
         {
-            //timer = 0;
-            //for (float i = 0; i <= knockDuration; i += Time.deltaTime)
-            //{
-            //    moveVector = Vector3.zero;
-            //    anim.SetBool("hit", true);
-            //    timer += Time.deltaTime;
-            //}
-            anim.SetBool("hit", true);
+            StopMovement();
+            Invoke("ResetHit", knockDuration);
         }
-        Invoke("ResetHit", knockDuration);
     }
 
     public void ResetHit()
