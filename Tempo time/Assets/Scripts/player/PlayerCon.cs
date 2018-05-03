@@ -7,6 +7,7 @@ public class PlayerCon : MonoBehaviour {
 
     public int playerId = 0;
 
+    public float pushDistance = 0.3f;
     public float moveSpeed = 3.0f;
     public float gravity = 5.0f;
     public float jump = 3.0f;
@@ -158,7 +159,9 @@ public class PlayerCon : MonoBehaviour {
             anim.SetBool("hit", true);
             Stop();
             Destroy(GetComponentInChildren<HitboxScript>().gameObject);
-            cc.transform.LookAt(col.GetComponentInParent<Transform>().position - new Vector3(0, col.GetComponentInParent<Transform>().position.y, 0));
+            Vector3 other = col.transform.position;
+            other.y = transform.position.y;
+            cc.transform.LookAt(other);
         }
     }
 
@@ -166,6 +169,7 @@ public class PlayerCon : MonoBehaviour {
     {
         if (anim.GetBool("hit"))
         {
+            cc.Move(-transform.forward * pushDistance);
             Invoke("ResetHit", knockDuration);
         }
     }
