@@ -50,26 +50,30 @@ public class PlayerCon : MonoBehaviour {
 
     void LateUpdate()
     {
-        
         Score();
     }
 
     private void GetInput()
     {
-        moveVector.x = player.GetAxis("MoveHorizontal");
-        moveVector.z = player.GetAxis("MoveVertical");
+        if (!(anim.GetBool("punch") || anim.GetBool("hit")))
+        {
+            moveVector.x = player.GetAxis("MoveHorizontal");
+            moveVector.z = player.GetAxis("MoveVertical");
+        }
     }
 
     private void ProcessInput()
     {
-        if (moveVector.x != 0.0f || moveVector.z != 0.0f)
+        if (!(moveVector.x == 0.0f && moveVector.z == 0.0f) && !(anim.GetBool("punch") || anim.GetBool("hit")))
         {
             cc.Move(moveVector * moveSpeed * Time.deltaTime);
             anim.SetFloat("speed", moveVector.magnitude);
         }
         else
+        {
             anim.SetFloat("speed", 0);
-        if(player.GetButtonDown("PunchAndThrow"))
+        }
+        if (player.GetButtonDown("PunchAndThrow"))
         {
             PunchAndThrow();
         }
@@ -84,26 +88,28 @@ public class PlayerCon : MonoBehaviour {
         //    moveVector.y = -gravity;
         //if (player.GetButtonDown("Jump") && cc.isGrounded)
         //{ moveVector.y = jump; jumpTimer = 0; }
-
-        if (!cc.isGrounded)
+        if (!anim.GetBool("hit") || !anim.GetBool("punch"))
         {
-            gravity += fallAcceleration * Time.deltaTime;
-            if (gravity > maxFallSpeed)
-                gravity = maxFallSpeed;
-        }
-        else
-        {
-            gravity = 1;
-        }
-        if (player.GetButtonDown("Jump") && cc.isGrounded)
-            gravity = -jump;
-        moveVector.y = -gravity;
+            if (!cc.isGrounded)
+            {
+                gravity += fallAcceleration * Time.deltaTime;
+                if (gravity > maxFallSpeed)
+                    gravity = maxFallSpeed;
+            }
+            else
+            {
+                gravity = 1;
+            }
+            if (player.GetButtonDown("Jump") && cc.isGrounded)
+                gravity = -jump;
+            moveVector.y = -gravity;
 
-        cc.Move(moveVector * Time.deltaTime);
+            cc.Move(moveVector * Time.deltaTime);
 
-        Vector3 velo = cc.velocity;
-        velo.y -= velo.y;
-        cc.transform.LookAt(cc.transform.position + velo);
+            Vector3 velo = cc.velocity;
+            velo.y -= velo.y;
+            cc.transform.LookAt(cc.transform.position + velo);
+        }
     }
 
     private void PunchAndThrow()
@@ -127,10 +133,16 @@ public class PlayerCon : MonoBehaviour {
         {
             Instantiate<GameObject>(hitbox, transform);
             anim.SetBool("punch", true);
+            Stop();
         }
 
          Invoke("ResetPunch", punchDuration);
 
+    }
+
+    public void Stop()
+    {
+        moveVector = Vector3.zero;
     }
 
     public void ResetPunch()
@@ -139,11 +151,14 @@ public class PlayerCon : MonoBehaviour {
     }
 
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.tag == "hitBox")
+        if(col.gameObject.tag == "hitBox" && col.transform.parent != transform)
         {
             anim.SetBool("hit", true);
+            Stop();
+            Destroy(GetComponentInChildren<HitboxScript>().gameObject);
+            cc.transform.LookAt(col.GetComponentInParent<Transform>().position - new Vector3(0, col.GetComponentInParent<Transform>().position.y, 0));
         }
     }
 
@@ -151,7 +166,6 @@ public class PlayerCon : MonoBehaviour {
     {
         if (anim.GetBool("hit"))
         {
-            StopMovement();
             Invoke("ResetHit", knockDuration);
         }
     }
@@ -159,11 +173,6 @@ public class PlayerCon : MonoBehaviour {
     public void ResetHit()
     {
         anim.SetBool("hit", false);
-    }
-
-    public void StopMovement()
-    {
-        moveVector = Vector3.zero;
     }
 
     public void Score()

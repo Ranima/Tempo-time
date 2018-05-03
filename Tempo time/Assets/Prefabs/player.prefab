@@ -2051,8 +2051,8 @@ MonoBehaviour:
   fallAcceleration: 8
   hitbox: {fileID: 1271937077699344, guid: c87c5bbc04c9a75478ae8024c3fec019, type: 2}
   anim: {fileID: 95480818793795164}
-  knockDuration: 1
-  punchDuration: 0.25
+  knockDuration: 2
+  punchDuration: 0.5
   score: {fileID: 2100000, guid: 20cb295f5c8ebaa44864d77d96a0e7da, type: 2}
   DanceFloor: {fileID: 0}
   raycastfilter:
