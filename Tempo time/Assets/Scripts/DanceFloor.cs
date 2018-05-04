@@ -9,6 +9,7 @@ public class DanceFloor : MonoBehaviour {
     public float TransTime = 0.5f;
     public int players = 1;
     public bool[] Scorecheck;
+    public AudioSource music;
 
     //private bool DanceOver = false;
     private GameObject[] tiles;
@@ -21,6 +22,7 @@ public class DanceFloor : MonoBehaviour {
     private float MyFloat = 0;
 
     void Awake () {
+        music.Play();
         GetTiles();
         LoadMaterials();
         Scorecheck = new bool[players];
@@ -55,6 +57,7 @@ public class DanceFloor : MonoBehaviour {
                 {
                     hasScored[i] = false;
                 }
+                music.volume = 0.25f;
             }
 
             if (danceTimeOver > DanceTime + ScoreTime)
@@ -71,6 +74,7 @@ public class DanceFloor : MonoBehaviour {
                         Scorecheck[i] = true;
                     hasScored[i] = true;
                 }
+                music.volume = 1;
             }
             danceTimeOver += Time.deltaTime;
         }

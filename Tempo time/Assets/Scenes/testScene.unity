@@ -630,6 +630,16 @@ Prefab:
       propertyPath: scene
       value: MenuScene
       objectReference: {fileID: 0}
+    - target: {fileID: 114729457739264206, guid: 5d9f29e4edeabc441931135c614a6080,
+        type: 2}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1902710364}
+    - target: {fileID: 114729457739264206, guid: 5d9f29e4edeabc441931135c614a6080,
+        type: 2}
+      propertyPath: ScoreTime
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d9f29e4edeabc441931135c614a6080, type: 2}
   m_IsPrefabParent: 0
@@ -4568,11 +4578,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 23216deeeb70bf34f9bb55fa1a59fc5f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
