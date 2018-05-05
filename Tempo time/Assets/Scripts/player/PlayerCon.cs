@@ -158,7 +158,8 @@ public class PlayerCon : MonoBehaviour {
         {
             anim.SetBool("hit", true);
             Stop();
-            Destroy(GetComponentInChildren<HitboxScript>().gameObject);
+            if (GetComponentInChildren<HitboxScript>() != null)
+            { Destroy(GetComponentInChildren<HitboxScript>().gameObject); }
             Vector3 other = col.transform.position;
             other.y = transform.position.y;
             cc.transform.LookAt(other);

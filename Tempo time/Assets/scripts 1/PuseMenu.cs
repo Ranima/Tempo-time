@@ -10,6 +10,7 @@ public class PuseMenu : MonoBehaviour {
     public ScoreManager manager;
     public string scene;
     public GameObject pauseMenuUI;
+    public AudioSource music;
 
     // Update is called once per frame
     void Update ()
@@ -34,6 +35,7 @@ public class PuseMenu : MonoBehaviour {
     {
 
         pauseMenuUI.SetActive(false);
+        music.Play();
         Time.timeScale = 1f;
         GamePaused = false;
 
@@ -42,6 +44,7 @@ public class PuseMenu : MonoBehaviour {
    public void Pause()
     {
         pauseMenuUI.SetActive(true);
+        music.Pause();
         Time.timeScale = 0f;
         GamePaused = true;
     }

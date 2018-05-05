@@ -18,12 +18,22 @@ public class ScoreManager : MonoBehaviour {
     public GameObject winObject;
     public int ScoreToWin = 10;
     public GameObject DanceFloor;
+    public PuseMenu gameEnd;
 
     public int[] playerScore;
     public bool hasWon = false;
 
     void Awake(){
         playerScore = new int[gameObject.GetComponent<PlayerSpawn>().players];
+        Time.timeScale = 1f;
+    }
+
+    void Update()
+    {
+        if(hasWon)
+        {
+            gameEnd.Pause();
+        }
     }
 
     public void IncrementScore(int player){

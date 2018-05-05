@@ -57,7 +57,7 @@ public class DanceFloor : MonoBehaviour {
                 {
                     hasScored[i] = false;
                 }
-                music.volume = 0.25f;
+                music.volume = 0.3f;
             }
 
             if (danceTimeOver > DanceTime + ScoreTime)
@@ -74,7 +74,7 @@ public class DanceFloor : MonoBehaviour {
                         Scorecheck[i] = true;
                     hasScored[i] = true;
                 }
-                music.volume = 1;
+                music.volume = 0.6f;
             }
             danceTimeOver += Time.deltaTime;
         }
