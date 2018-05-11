@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Rewired;
 
 public class MenuControls : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+    private Player player;
+
+    public Button play;
+    public Button exit;
+
 	void Update () {
-		
+		if(player.GetButtonDown("PunchAndThrow"))
+        {
+            play.Select();
+        }
 	}
 }
