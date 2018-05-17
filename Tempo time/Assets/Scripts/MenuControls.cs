@@ -10,11 +10,19 @@ public class MenuControls : MonoBehaviour {
 
     public Button play;
     public Button exit;
-
+    void Awake()
+    {
+        player = ReInput.players.GetPlayer(0);
+    }
 	void Update () {
 		if(player.GetButtonDown("PunchAndThrow"))
         {
-            play.Select();
+            exit.onClick.Invoke();
         }
-	}
+
+        if (player.GetButtonDown("Jump"))
+        {
+            play.onClick.Invoke();
+        }
+    }
 }
